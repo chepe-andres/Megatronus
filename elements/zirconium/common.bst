@@ -15,6 +15,7 @@ sources:
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/containers-common.bst
+- zirconium/projectbluefin-common.bst
 - cli/hyfetch.bst
 
 variables:
