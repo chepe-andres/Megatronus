@@ -1,7 +1,7 @@
 kind: compose
 
 build-depends:
-  - oci/layers/zirconium-runtime.bst
+  - oci/zirconium/runtime.bst
   - freedesktop-sdk.bst:components/gcc.bst
 
 config:

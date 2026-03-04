@@ -1,7 +1,7 @@
 kind: compose
 
 build-depends:
-  - oci/layers/zirconium-stack.bst
+  - oci/zirconium/stack.bst
 
 config:
   exclude:
