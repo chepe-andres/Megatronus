@@ -7,6 +7,7 @@ depends:
   - core/linux.bst
   - freedesktop-sdk.bst:components/locales.bst
   - freedesktop-sdk.bst:components/linux-firmware.bst
+  - freedesktop-sdk.bst:components/sof-firmware.bst
   - freedesktop-sdk.bst:components/wireless-regdb-bin.bst
   - freedesktop-sdk.bst:components/systemd.bst
   - freedesktop-sdk.bst:components/dbus.bst
