@@ -21,11 +21,11 @@ config:
     go build -v -o output/uupd
   install-commands:
   - |
-    install -Dm0755 uupd.service -t "%{install-root}%{indep-libdir}/systemd/system"
-    install -Dm0755 uupd-manual.service -t "%{install-root}%{indep-libdir}/systemd/system"
-    install -Dm0755 uupd.timer -t "%{install-root}%{indep-libdir}/systemd/system"
-    install -Dm0755 uupd.rules -t "%{install-root}%{sysconfdir}/polkit-1/rules.d"
-    install -Dm0755 config.json "%{install-root}%{sysconfdir}/uupd"
+    install -Dm0644 uupd.service -t "%{install-root}%{indep-libdir}/systemd/system"
+    install -Dm0644 uupd-manual.service -t "%{install-root}%{indep-libdir}/systemd/system"
+    install -Dm0644 uupd.timer -t "%{install-root}%{indep-libdir}/systemd/system"
+    install -Dm0644 uupd.rules -t "%{install-root}%{sysconfdir}/polkit-1/rules.d"
+    install -Dm0644 config.json -t "%{install-root}%{sysconfdir}/uupd"
 
     install -Dm0755 ./output/uupd -t "%{install-root}%{bindir}"
   - |
