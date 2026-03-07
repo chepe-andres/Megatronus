@@ -43,9 +43,10 @@ config:
     install -Dm0644 system_files/usr/share/greetd/greetd-spawn.pam_env.conf -t "%{install-root}%{prefix}/share/greetd"
     install -Dm0644 system_files/usr/lib/pam.d/greetd-spawn -t "%{install-root}%{indep-libdir}/pam.d"
 
-    # systemd services
+    # systemd services / tmpfiles
     install -Dm0644 system_files/usr/lib/systemd/system/rechunker-group-fix.service -t "%{install-root}%{indep-libdir}/systemd/system"
     install -Dm0644 system_files/usr/lib/systemd/user/chezmoi-*.{service,timer} -t "%{install-root}%{indep-libdir}/systemd/user"
+    install -Dm0644 system_files/usr/lib/tmpfiles.d/99-dms-greeter.conf -t "%{install-root}%{indep-libdir}/tmpfiles.d"
 
     # FIXME: uncomment this when we use a release of flatpak with `flatpak preinstall` support
     # install -Dm0644 "system_files/usr/lib/systemd/system/flatpak-preinstall.service" -t "%{install-root}%{indep-libdir}/systemd/system"
