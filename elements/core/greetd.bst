@@ -8,6 +8,7 @@ sources:
 - kind: local
   path: files/greetd
 - kind: cargo2
+  url: crates:crates
   ref:
   - kind: registry
     name: addr2line
