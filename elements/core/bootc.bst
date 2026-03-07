@@ -4,8 +4,9 @@ sources:
 - kind: git_repo
   url: github:bootc-dev/bootc.git
   track: main
-  ref: v1.13.0-38-gdf3e863fec17ea35ea5e12e4a21b323662d54a27
+  ref: v1.13.0-40-g68e20100ddc27b5246eaf9dbc5584afd487ebe5e
 - kind: cargo2
+  url: crates:crates
   ref:
   - kind: registry
     name: adler2
@@ -129,8 +130,8 @@ sources:
     sha: 6fe962d42e07c22aec2618191c3683412735b7e6dcd7bab2eec811ab4697c58e
   - kind: registry
     name: cap-std-ext
-    version: 5.0.0
-    sha: d201b8b353bc963f2e8c374be7866dba47082ff041fb0db2d7543f2b9c8367ce
+    version: 5.1.1
+    sha: 56f9d7cf114dea582f663f03f4c563d0fc5ca2c8fa4c496eb538d8f01981ea51
   - kind: registry
     name: cap-tempfile
     version: 3.4.5
@@ -165,7 +166,7 @@ sources:
     sha: 613afe47fcd5fac7ccf1db93babcb082c5994d996f20b8b159f2ad1658eb5724
   - kind: git
     commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
     name: cfsctl
@@ -216,28 +217,28 @@ sources:
     sha: 55b672471b4e9f9e95499ea597ff64941a309b2cdbffcc46f2cc5e2d971fd335
   - kind: git
     commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
     name: composefs
     version: 0.3.0
   - kind: git
     commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
     name: composefs-boot
     version: 0.3.0
   - kind: git
     commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
     name: composefs-ioctls
     version: 0.3.0
   - kind: git
     commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
     name: composefs-oci
