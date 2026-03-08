@@ -12,3 +12,7 @@ disable systemd-networkd-resolve-hook.socket
 disable systemd-network-generator.service
 disable systemd-networkd-wait-online.service
 disable systemd-networkd-persistent-storage.service
+
+# Disable various bootc services that should not be enabled
+disable bootc-fetch-apply-updates.timer
+disable bootc-publish-rhsm-facts.service
