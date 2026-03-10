@@ -7,7 +7,7 @@ sources:
 - kind: git_repo
   url: github:twpayne/chezmoi.git
   track: v*
-  ref: v2.69.4-0-gc4c669c9f2f329233a85802014d26fba3c58a4a4
+  ref: v2.70.0-0-g6624b49786a9f039f05b4d929c35fd4f4bf17337
 - kind: tar
   base-dir: "usr/bin"
   (?):

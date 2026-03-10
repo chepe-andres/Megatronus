@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:yalter/niri.git
   track: main
-  ref: v25.11-125-g8f75d171b6017ed34043b1255ec4ffc374bf6ab0
+  ref: v25.11-127-gb07bde3ee82dd73115e6b949e4f3f63695da35ea
 - kind: cargo2
   url: crates:crates
   ref:
@@ -370,8 +370,8 @@ sources:
     sha: 78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a
   - kind: registry
     name: csscolorparser
-    version: 0.8.1
-    sha: 02ee6eae4d99456f92dc379ba21cf08f783ef5525f193c3854b4e921ece045c5
+    version: 0.8.3
+    sha: 199f851bd3cb5004c09474252c7f74e7c047441ed0979bf3688a7106a13da952
   - kind: registry
     name: cursor-icon
     version: 1.2.0

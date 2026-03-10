@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:bootc-dev/bootc.git
   track: main
-  ref: v1.13.0-43-g86ba489d53db7d350dac082e136aad3b85a6af3b
+  ref: v1.13.0-58-g99da62b6f09ed42841396ac66298030f25daf439
 - kind: cargo2
   url: crates:crates
   ref:
@@ -165,10 +165,10 @@ sources:
     version: 0.2.1
     sha: 613afe47fcd5fac7ccf1db93babcb082c5994d996f20b8b159f2ad1658eb5724
   - kind: git
-    commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+    commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
     repo: github:composefs/composefs-rs
     query:
-      rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+      rev: 2203e8f
     name: cfsctl
     version: 0.3.0
   - kind: registry
@@ -216,31 +216,31 @@ sources:
     version: 1.0.0
     sha: 55b672471b4e9f9e95499ea597ff64941a309b2cdbffcc46f2cc5e2d971fd335
   - kind: git
-    commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+    commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
     repo: github:composefs/composefs-rs
     query:
-      rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+      rev: 2203e8f
     name: composefs
     version: 0.3.0
   - kind: git
-    commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+    commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
     repo: github:composefs/composefs-rs
     query:
-      rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+      rev: 2203e8f
     name: composefs-boot
     version: 0.3.0
   - kind: git
-    commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+    commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
     repo: github:composefs/composefs-rs
     query:
-      rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+      rev: 2203e8f
     name: composefs-ioctls
     version: 0.3.0
   - kind: git
-    commit: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+    commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
     repo: github:composefs/composefs-rs
     query:
-      rev: b928c6bd6c051e111d3efc3d25cdaf9159182ed0
+      rev: 2203e8f
     name: composefs-oci
     version: 0.3.0
   - kind: registry

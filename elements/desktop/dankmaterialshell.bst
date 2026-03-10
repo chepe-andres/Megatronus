@@ -8,7 +8,7 @@ sources:
 - kind: git_repo
   url: github:AvengeMedia/DankMaterialShell.git
   track: master
-  ref: v1.4.0-180-gbaa956c3a1e1ba63a26d3b7380bb66376c066575
+  ref: v1.4.0-196-g9417edac8df6453d7eeda4c913b34762839c538e
 - kind: local
   path: files/dankmaterialshell
 
@@ -401,6 +401,7 @@ config:
     install -dm0755 "%{install-root}%{datadir}/quickshell/dms"
     cp -r "quickshell/./" "%{install-root}%{datadir}/quickshell/dms"
     install -Dpm0644 -t "%{install-root}%{sysconfdir}/pam.d/" quickshell/assets/pam/fprint
+    install -Dpm0644 -t "%{install-root}%{sysconfdir}/pam.d/" quickshell/assets/pam/u2f
     install -Dm0644 -t "%{install-root}%{prefix}/lib/systemd/user/" assets/systemd/dms.service
 
     # dms-greeter

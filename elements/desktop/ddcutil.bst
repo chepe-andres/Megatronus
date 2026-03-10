@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:rockowitz/ddcutil.git
   track: "*"
-  ref: v2.2.5-0-g5a77cf7bd77eccac8276e8e9cad754179fdcdd05
+  ref: v2.2.6-0-g1c8540750f1236c711122e44a644c2999211bbd0
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
