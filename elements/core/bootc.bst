@@ -4,10 +4,14 @@ sources:
 - kind: git_repo
   url: github:bootc-dev/bootc.git
   track: main
-  ref: v1.13.0-58-g99da62b6f09ed42841396ac66298030f25daf439
+  ref: v1.14.0-1-gb80d8817b938d9d206ca859dc7f231eed8b7ca21
 - kind: cargo2
   url: crates:crates
   ref:
+  - kind: registry
+    name: addr2line
+    version: 0.25.1
+    sha: 1b5d307320b3181d6d7954e663bd7c774a838b8220fe0593c86d9fb09f498b4b
   - kind: registry
     name: adler2
     version: 2.0.1
@@ -65,6 +69,10 @@ sources:
     version: 1.5.0
     sha: c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8
   - kind: registry
+    name: backtrace
+    version: 0.3.76
+    sha: bb531853791a215d7c62a30daf0dde835f381ab5de4589cfe7c649d2cbe92bd6
+  - kind: registry
     name: base64
     version: 0.20.0
     sha: 0ea22880d78093b0cbe17c89f64a7d457941e65759157ec6cb31a31d652b05e5
@@ -72,6 +80,13 @@ sources:
     name: base64
     version: 0.21.7
     sha: 9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567
+  - kind: git
+    commit: d4be4933e09796f355076ad6daa60d570e64cec8
+    repo: github:bootc-dev/bcvk
+    query:
+      rev: d4be4933e09796f355076ad6daa60d570e64cec8
+    name: bcvk-qemu
+    version: 0.1.0
   - kind: registry
     name: bitflags
     version: 1.3.2
@@ -204,6 +219,14 @@ sources:
     version: 0.2.31
     sha: 439ea63a92086df93893164221ad4f24142086d535b3a0957b9b9bea2dc86301
   - kind: registry
+    name: color-eyre
+    version: 0.6.5
+    sha: e5920befb47832a6d61ee3a3a846565cfa39b331331e68a3b1d1116630f2f26d
+  - kind: registry
+    name: color-spantrace
+    version: 0.3.0
+    sha: b8b88ea9df13354b55bc7234ebcce36e6ef896aca2e42a15de9e10edce01b427
+  - kind: registry
     name: colorchoice
     version: 1.0.4
     sha: b05b61dc5112cbb17e4b6cd61790d9845d13888356391624cbe7e41efeac1e75
@@ -316,6 +339,10 @@ sources:
     version: 0.20.11
     sha: fc34b93ccb385b40dc71c6fceac4b2ad23662c7eeb248cf10d529b7e055b6ead
   - kind: registry
+    name: data-encoding
+    version: 2.10.0
+    sha: d7a1e2f27636f116493b8b860f5546edb47c8d8f8ea73e1d2a20be88e28d1fea
+  - kind: registry
     name: derive_builder
     version: 0.20.2
     sha: 507dfb09ea8b7fa618fcf76e953f4f5e192547945816d5358edffe39f6f94947
@@ -391,6 +418,10 @@ sources:
     name: escape8259
     version: 0.5.3
     sha: 5692dd7b5a1978a5aeb0ce83b7655c58ca8efdcb79d21036ea249da95afec2c6
+  - kind: registry
+    name: eyre
+    version: 0.6.12
+    sha: 7cd915d99f24784cdc19fd37ef22b97e3ff0ae756c7e492e9fbfe897d61e2aec
   - kind: registry
     name: fastrand
     version: 2.3.0
@@ -488,6 +519,10 @@ sources:
     version: 0.1.6
     sha: 9cf0fc11e47561d47397154977bc219f4cf809b2974facc3ccb3b89e2436f912
   - kind: registry
+    name: gimli
+    version: 0.32.3
+    sha: e629b9b98ef3dd8afe6ca2bd0f89306cec16d43d907889945bc5d6687f2f13c7
+  - kind: registry
     name: gio
     version: 0.20.12
     sha: 8e27e276e7b6b8d50f6376ee7769a71133e80d093bdc363bd0af71664228b831
@@ -555,6 +590,10 @@ sources:
     name: ident_case
     version: 1.0.1
     sha: b9e0384b61958566e926dc50660321d12159025e767c18e043daf26b70104c39
+  - kind: registry
+    name: indenter
+    version: 0.3.4
+    sha: 964de6e86d545b246d84badc0fef527924ace5134f30641c203ef52ba83f58d5
   - kind: registry
     name: indexmap
     version: 2.13.0
@@ -723,6 +762,10 @@ sources:
     name: number_prefix
     version: 0.4.0
     sha: 830b246a0e5f20af87141b25c173cd1b609bd7779a4617d6ec582abaf90870f3
+  - kind: registry
+    name: object
+    version: 0.37.3
+    sha: ff76201f031d8863c38aa7f905eca4f53abbfa15f609db4277d44cd8938f33fe
   - kind: registry
     name: oci-spec
     version: 0.8.4
@@ -915,6 +958,10 @@ sources:
     name: roff
     version: 0.2.2
     sha: 88f8660c1ff60292143c98d08fc6e2f654d722db50410e3f3797d40baaf9d8f3
+  - kind: registry
+    name: rustc-demangle
+    version: 0.1.27
+    sha: b50b8869d9fc858ce7266cce0194bd74df58b9d0e3f6df3a9fc8eb470d95c09d
   - kind: registry
     name: rustc_version
     version: 0.4.1
@@ -1164,6 +1211,10 @@ sources:
     version: 0.1.36
     sha: db97caf9d906fbde555dd62fa95ddba9eecfd14cb388e4f491a66d74cd5fb79a
   - kind: registry
+    name: tracing-error
+    version: 0.2.1
+    sha: 8b1581020d7a273442f5b45074a6a57d5757ad0a47dac0e9f0bd57b81936f3db
+  - kind: registry
     name: tracing-journald
     version: 0.3.2
     sha: 2d3a81ed245bfb62592b1e2bc153e77656d94ee6a0497683a65a12ccaf2438d0
@@ -1239,6 +1290,10 @@ sources:
     name: version_check
     version: 0.9.5
     sha: 0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a
+  - kind: registry
+    name: vsock
+    version: 0.5.1
+    sha: 4e8b4d00e672f147fc86a09738fadb1445bd1c0a40542378dfb82909deeee688
   - kind: registry
     name: wasi
     version: 0.11.1+wasi-snapshot-preview1
