@@ -3,9 +3,8 @@ kind: meson
 sources:
 - kind: git_repo
   url: codeberg:dnkl/foot.git
-  # FIXME: update past 1.25.0 when zdots & DMS fixes the foot config to use colors-dark
-  track: "1.25.0"
-  ref: 1.25.0-0-gb44a62724cd51c7fecdfd9d1b41a3691b11a4c27
+  track: "*"
+  ref: 1.26.0-0-g739cf115e6bc014b895bf945afccb88be6971be0
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
