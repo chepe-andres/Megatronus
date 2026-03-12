@@ -3,8 +3,8 @@ kind: make
 sources:
 - kind: git_repo
   url: github:bootc-dev/bootc.git
-  track: main
-  ref: v1.14.0-1-gb80d8817b938d9d206ca859dc7f231eed8b7ca21
+  track: v*
+  ref: v1.14.1-0-gad45118a5b893b741cea20de0569b3d3ebf29f92
 - kind: cargo2
   url: crates:crates
   ref:
