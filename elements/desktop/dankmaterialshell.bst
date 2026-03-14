@@ -8,7 +8,7 @@ sources:
 - kind: git_repo
   url: github:AvengeMedia/DankMaterialShell.git
   track: master
-  ref: v1.4.0-209-g772094eacdfa3776743bfe42f0055e5e84ed87b3
+  ref: v1.4.0-241-gbb08e1233a2a57fc64ee024523cb7010aabb97ce
 - kind: local
   path: files/dankmaterialshell
 
@@ -362,7 +362,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
 - freedesktop-sdk.bst:components/git.bst
-- freedesktop-sdk.bst:components/go.bst
+- deps/go-1.26.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
