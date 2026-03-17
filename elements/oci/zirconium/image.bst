@@ -35,7 +35,7 @@ config:
 
     - |
       cd "%{install-root}"
-      build-oci -j %{max-jobs} <<EOF
+      build-oci <<EOF
       mode: oci
       gzip: disabled
       images:
