@@ -19,6 +19,8 @@ files/boot-keys/PK.crt
 files/boot-keys/PK.key
 files/boot-keys/VENDOR.crt
 files/boot-keys/VENDOR.key
+files/boot-keys/SYSEXT.crt
+files/boot-keys/SYSEXT.key
 files/boot-keys/extra-db/
 files/boot-keys/extra-kek/
 files/boot-keys/linux-module-cert.crt

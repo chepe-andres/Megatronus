@@ -28,7 +28,7 @@ generate-keys $vendor=vendor:
         [ ! -d "{{base_dir}}/files/boot-keys/${f}" ] && mkdir -p "{{base_dir}}/files/boot-keys/${f}"
     done
 
-    for f in PK KEK DB VENDOR linux-module-cert; do
+    for f in PK KEK DB VENDOR SYSEXT linux-module-cert; do
         [ ! -f "{{base_dir}}/files/boot-keys/${f}.key" ] && [ ! -f "{{base_dir}}/files/boot-keys/${f}.crt" ] && \
             openssl req -new -x509 -newkey rsa:2048 -subj "/CN=${vendor} ${f} key/" -keyout "files/boot-keys/${f}.key" -out "files/boot-keys/${f}.crt" -days 3650 -nodes -sha256
     done
