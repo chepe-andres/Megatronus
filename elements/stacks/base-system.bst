@@ -75,6 +75,7 @@ depends:
   - core/system-release.bst
   - config/systemd/zirconium.bst
   - config/bash-config.bst
+  - config/polkit/networkmanager-wheel-nopasswd.bst
   - cli/brew.bst
   - cli/brew-tarball.bst
   - cli/lsb-release.bst
