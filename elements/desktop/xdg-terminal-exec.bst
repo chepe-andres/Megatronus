@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:Vladimir-csp/xdg-terminal-exec.git
   track: v*
-  ref: v0.14.1-0-gaeb3ef9360eda035b80e44baa2e74fb46fc691e3
+  ref: v0.14.2-0-ge675f61c1fa1175b1295f9d2ed5338f73a2cb679
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
