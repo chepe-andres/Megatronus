@@ -70,6 +70,7 @@ depends:
   - gnome-build-meta.bst:gnomeos-deps/android-udev-rules.bst
   - gnome-build-meta.bst:gnomeos-deps/udev-hide-usr.bst
   - gnome-build-meta.bst:gnomeos-deps/hidraw-udev.bst
+  - gnome-build-meta.bst:gnomeos-deps/zram-generator.bst
 
   - core/os-release.bst
   - core/system-release.bst
