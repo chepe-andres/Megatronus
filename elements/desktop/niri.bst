@@ -2,7 +2,7 @@ kind: manual
 
 sources:
 - kind: git_repo
-  url: github:yalter/niri.git
+  url: github:niri-wm/niri.git
   track: main
   ref: v25.11-128-g8f48f56fe19918b5cfa02e5d68a47ebaf7bf3dee
 - kind: cargo2

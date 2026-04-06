@@ -6,11 +6,13 @@ depends:
   - desktop/dankmaterialshell.bst
   - desktop/foot.bst
   - desktop/qt6ct.bst
+  - desktop/satty.bst
   - cli/chezmoi.bst
   - core/greetd.bst
   - core/xdg-utils.bst
   - desktop/iio-niri.bst
   - desktop/xdg-terminal-exec.bst
+  - config/satty.bst
   - config/pam/archlinux-pam-configs.bst
   - config/pam/greetd.bst
   - config/greetd/service.bst
@@ -29,6 +31,7 @@ depends:
   - gnome-build-meta.bst:core-deps/xdg-desktop-portal-gnome.bst
   - gnome-build-meta.bst:core-deps/xdg-desktop-portal-gtk.bst
   - gnome-build-meta.bst:core-deps/boltd.bst
+  - gnome-build-meta.bst:core/gnome-disk-utility.bst
   - gnome-build-meta.bst:core/gnome-keyring.bst
   - gnome-build-meta.bst:core/nautilus.bst
   - desktop/xdg-terminal-exec-nautilus.bst
